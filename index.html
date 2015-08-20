@@ -12,10 +12,32 @@
     <div class="container-fluid">
       <div class="row row-eq-height">
         
-        <div class="col-md-4 left">  
+        <div class="col-md-4 left" >  
+          <form action="#" method="POST" >
+            <label for="firstName"><strong>Location:</strong></label>
+            <br>
+            <input class="fullwidth" type="text" name="location" id="location"> 
+            <br><br>  
+            <label for="lastName"><strong>Location Type:</strong></label>
+            <br>
+            <input class="fullwidth" type="text" name="location_type" id="location_type">
+            <br><br>
+            <label for="age"><strong>Review:</strong></label>
+            <br>
+            <input class="fullwidth" type="text" name="review" id="review">
+            <br>
+            <br>
+            <label for="addto"><strong>Add to:</strong></label>
+            <br>
+            <button type="button" class="btn btn-group" id="visitedBtn">Visited</button>
+            <button type="button" class="btn btn-group" id="wishlistBtn">Wishlist</button>
+            <br>
+            <br>
+          </form>
+          <button type="button" class="fullwidth" id="addTrip">Add Trip</button>
         </div>
 
-        <div class="col-md-8 right navbar-text">  
+        <div class="col-md-8 right navbar-text" id="list-of-trips">  
         </div>
 
       </div>
