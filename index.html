@@ -14,15 +14,15 @@
         
         <div class="col-md-4 left" >  
           <form action="#" method="POST" >
-            <label for="firstName"><strong>Location:</strong></label>
+            <label for="location"><strong>Location:</strong></label>
             <br>
             <input class="fullwidth" type="text" name="location" id="location"> 
             <br><br>  
-            <label for="lastName"><strong>Location Type:</strong></label>
+            <label for="location_types"><strong>Location Type:</strong></label>
             <br>
-            <input class="fullwidth" type="text" name="location_type" id="location_type">
+            <select class="fullwidth" name="location_types" id="location_types"></select>
             <br><br>
-            <label for="age"><strong>Review:</strong></label>
+            <label for="review"><strong>Review:</strong></label>
             <br>
             <input class="fullwidth" type="text" name="review" id="review">
             <br>
@@ -41,6 +41,10 @@
         </div>
 
       </div>
+    </div>
+    <div class="review-container">
+      <textarea class="review-entry"></textarea>
+      <button id="save-review">Save Trip</button>
     </div>
 
     <script data-main="./javascripts/main"  src="lib/bower_components/requirejs/require.js"></script>
